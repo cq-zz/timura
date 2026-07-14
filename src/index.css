@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Base resets & custom smooth scroll */
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom Lavender & Warm White Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FCFBF9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4B9E2;
+  border-radius: 9999px;
+  border: 2px solid #FCFBF9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7D6EAD;
+}
+
+/* Pure CSS Keyframe animations as helper presets */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Responsive modal image gallery styles */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+/* Selection highlight in warm lavender */
+::selection {
+  background-color: #E1D5F5 !important;
+  color: #5B4B8A !important;
+}
