@@ -6,7 +6,7 @@ import { zh } from '../locales/zh';
 import { hant } from '../locales/zh-hant';
 import { en } from '../locales/en';
 
-export default function ProductCard({ product, onViewDetails, lang }) {
+export default function ProductCard({ product, onViewDetails, lang, index = 0 }) {
   const tLoc = (key, fallback = "") => {
     const locales = {
       'zh': zh,
@@ -29,11 +29,14 @@ export default function ProductCard({ product, onViewDetails, lang }) {
   return (
     <motion.div
       id={`product-card-${product.id}`}
-      layout
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.95 }}
-      transition={{ duration: 0.3 }}
+      transition={{
+        duration: 0.35,
+        delay: index * 0.05,
+        ease: [0.16, 1, 0.3, 1]
+      }}
       className="bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-[#7D6EAD]/30 shadow-sm hover:shadow-2xl hover:shadow-[#7D6EAD]/10 hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full"
     >
       {/* Image Area */}

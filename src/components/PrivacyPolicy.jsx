@@ -47,7 +47,7 @@ export default function PrivacyPolicy({ lang }) {
                 隐私政策
               </h1>
               <div className="flex flex-wrap items-center gap-4 mt-2 text-xs text-gray-400">
-                <span className="font-medium text-[#5B4B8A]">时光收藏夹 (Tivora)</span>
+                <span className="font-medium text-[#5B4B8A]">时光收藏夹 (Timemory)</span>
                 <span>•</span>
                 <span>更新日期：2026-07-06</span>
               </div>
@@ -61,7 +61,7 @@ export default function PrivacyPolicy({ lang }) {
               <div className="space-y-1">
                 <span className="text-sm font-bold text-[#5B4B8A]">核心承诺：完全离线运行</span>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed text-justify">
-                  时光收藏夹（Tivora）是一款完全离线运行的本地应用。我们不会收集、上传、存储或分享您的任何个人数据到任何远程服务器。您的一切数据都保存在您自己的设备中，由您完全掌控。
+                  时光收藏夹（Timemory）是一款完全离线运行的本地应用。我们不会收集、上传、存储或分享您的任何个人数据到任何远程服务器。您的一切数据都保存在您自己的设备中，由您完全掌控。
                 </p>
               </div>
             </div>
@@ -76,7 +76,7 @@ export default function PrivacyPolicy({ lang }) {
                   我们是谁
                 </h3>
                 <p className="pl-7 text-xs sm:text-sm text-gray-500 text-justify">
-                  时光收藏夹（Tivora）是一款完全离线运行的个人生活管理工具。开发者不运营任何后端服务器，不提供云同步服务，也不使用任何第三方分析 or 追踪工具。
+                  时光收藏夹（Timemory）是一款完全离线运行的个人生活管理工具。开发者不运营任何后端服务器，不提供云同步服务，也不使用任何第三方分析 or 追踪工具。
                 </p>
               </div>
 
@@ -289,7 +289,7 @@ export default function PrivacyPolicy({ lang }) {
 
           {/* Footer of the policy page */}
           <div className="mt-12 pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <span className="text-xs text-gray-400 font-mono">EST. 2026 — TIVORA SAFETY ASSURED</span>
+            <span className="text-xs text-gray-400 font-mono">EST. 2026 — TIMEMORY SAFETY ASSURED</span>
             <span className="text-[#7D6EAD] text-xs font-semibold flex items-center gap-1">
               <span>✿ 时光收藏夹团队 敬制</span>
             </span>
@@ -325,7 +325,7 @@ export default function PrivacyPolicy({ lang }) {
                 Privacy Policy
               </h1>
               <div className="flex flex-wrap items-center gap-4 mt-2 text-xs text-gray-400">
-                <span className="font-medium text-[#5B4B8A]">Tivora</span>
+                <span className="font-medium text-[#5B4B8A]">Timemory</span>
                 <span>•</span>
                 <span>Last Updated: 2026-07-06</span>
               </div>
@@ -339,7 +339,7 @@ export default function PrivacyPolicy({ lang }) {
               <div className="space-y-1">
                 <span className="text-sm font-bold text-[#5B4B8A]">Core Commitment: Fully Offline Operation</span>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed text-justify">
-                  Tivora is a completely offline local application. We do not collect, upload, store, or share any of your personal data to any remote servers. All your data is saved on your own device, fully under your control.
+                  Timemory is a completely offline local application. We do not collect, upload, store, or share any of your personal data to any remote servers. All your data is saved on your own device, fully under your control.
                 </p>
               </div>
             </div>
@@ -354,7 +354,7 @@ export default function PrivacyPolicy({ lang }) {
                   Who We Are
                 </h3>
                 <p className="pl-7 text-xs sm:text-sm text-gray-500 text-justify">
-                  Tivora is a fully offline personal life management tool. The developer does not operate any backend servers, provide cloud synchronization services, or use any third-party analysis or tracking tools.
+                  Timemory is a fully offline personal life management tool. The developer does not operate any backend servers, provide cloud synchronization services, or use any third-party analysis or tracking tools.
                 </p>
               </div>
 
@@ -365,7 +365,7 @@ export default function PrivacyPolicy({ lang }) {
                   What Data We Collect
                 </h3>
                 <p className="pl-7 text-xs sm:text-sm text-gray-500 text-justify mb-2">
-                  Tivora does not collect any data—all data is actively entered by you and stored locally on your device. We cannot access this data, nor can we transfer it to any external servers.
+                  Timemory does not collect any data—all data is actively entered by you and stored locally on your device. We cannot access this data, nor can we transfer it to any external servers.
                 </p>
                 <div className="pl-7 grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                   <div className="bg-gray-50 p-4 rounded-xl border border-gray-100/55">
@@ -535,7 +535,7 @@ export default function PrivacyPolicy({ lang }) {
                   Children's Privacy
                 </h3>
                 <p className="pl-7 text-xs sm:text-sm text-gray-500 text-justify">
-                  Tivora does not collect any personal data of any users, so there is no issue of collecting children's data. We recommend that children under 13 use this application under guardian guidance.
+                  Timemory does not collect any personal data of any users, so there is no issue of collecting children's data. We recommend that children under 13 use this application under guardian guidance.
                 </p>
               </div>
 
@@ -567,9 +567,9 @@ export default function PrivacyPolicy({ lang }) {
 
           {/* Footer of the policy page */}
           <div className="mt-12 pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <span className="text-xs text-gray-400 font-mono">EST. 2026 — TIVORA SAFETY ASSURED</span>
+            <span className="text-xs text-gray-400 font-mono">EST. 2026 — TIMEMORY SAFETY ASSURED</span>
             <span className="text-[#7D6EAD] text-xs font-semibold flex items-center gap-1">
-              <span>✿ Crafted by Tivora Team</span>
+              <span>✿ Crafted by Timemory Team</span>
             </span>
           </div>
 

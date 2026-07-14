@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Leaf, Heart, ShieldCheck, ArrowRight, Grid, Wind, Sparkles, Sun, Droplets, PhoneCall } from 'lucide-react';
 import { BRAND_CONFIG, CATEGORIES, PRODUCTS } from './data/mockData';
@@ -17,7 +17,12 @@ import Footer from './components/Footer';
 import PrivacyPolicy from './components/PrivacyPolicy';
 
 export default function App() {
-  const [activePage, setActivePage] = useState('home');
+  const syncingFromHash = useRef(false);
+
+  const [activePage, setActivePage] = useState(() => {
+    const hash = window.location.hash.replace('#', '');
+    return ['home', 'products', 'about', 'privacy'].includes(hash) ? hash : 'home';
+  });
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [prevPage, setPrevPage] = useState('home');
@@ -84,25 +89,31 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
-  // Hidden URL routing mechanism for Privacy Policy
+  // Sync activePage to URL hash (skip if change originated from hash)
   React.useEffect(() => {
-    const handleUrlChange = () => {
-      const hash = window.location.hash || '';
-      const path = window.location.pathname || '';
-      const search = window.location.search || '';
-      if (hash.includes('privacy') || path.includes('privacy') || search.includes('privacy')) {
-        setActivePage('privacy');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (!syncingFromHash.current) {
+      window.location.hash = `#${activePage}`;
+    }
+  }, [activePage]);
+
+  // Listen for hash changes (browser back/forward, manual URL edit)
+  React.useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && ['home', 'products', 'about', 'privacy'].includes(hash) && hash !== activePage) {
+        syncingFromHash.current = true;
+        setActivePage(hash);
+        setSelectedCategory('all');
+        setCurrentPage(1);
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        // Reset flag after state update
+        setTimeout(() => { syncingFromHash.current = false; }, 0);
       }
     };
 
-    // Listen on mount and when hash/pathname changes
-    handleUrlChange();
-    window.addEventListener('hashchange', handleUrlChange);
-    return () => {
-      window.removeEventListener('hashchange', handleUrlChange);
-    };
-  }, []);
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, [activePage]);
 
   // Helper to map string to Lucide component icon
   const renderIcon = (iconName, className) => {
@@ -287,14 +298,15 @@ export default function App() {
 
               {/* Products List Grid */}
               <motion.div
-                layout
+                key={selectedCategory}
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8"
               >
                 <AnimatePresence mode="popLayout">
-                  {paginatedProducts.map((prod) => (
+                  {paginatedProducts.map((prod, idx) => (
                     <ProductCard
                       key={prod.id}
                       product={prod}
+                      index={idx}
                       onViewDetails={handleViewProductDetails}
                       lang={lang}
                     />
