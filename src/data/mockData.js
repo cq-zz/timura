@@ -13,6 +13,10 @@ export const BRAND_CONFIG = {
     en: "TIMURA"
   },
   englishName: "TIMURA",
+  slogan: {
+    zh: "让每一刻，遇见生活之美",
+    en: "Time Meets Aura"
+  },
   themeColors: {
     primary: "#7D6EAD", // 薰衣草主紫
     primaryLight: "#9A8CDE",
@@ -956,8 +960,8 @@ export const PRODUCTS = [
 
 export const ABOUT_INFO = {
   intro: {
-    zh: "「拾光时光」成立于2021年，是一家专注于把‘手心的温情与美好时光’带回千家万户的创意生活美学品牌。我们不追求宏大冰冷的科技概念，不谈空洞的数据指标。我们是一群热爱生活的年轻人，因为共同的热情聚在这个温润的品牌团队中。我们坚信，生活里的物件应该带有呼吸 and 厚度，能够在你感到疲惫的瞬间，给身心一个踏踏实实、充满善意与温存的拥抱。",
-    en: "Founded in 2021, TIMURA is an online brand dedicated to restoring touch and warmth to our cozy home and outdoor items. We steer clear of cold high-tech terms, complex sensors, or data metrics. We are simply a group of friends passionate about crafted living. We strongly believe that everyday items should hold organic tactile value, offering you a quiet, warm, and loving hug whenever you feel overwhelmed."
+    zh: "「拾光时光」成立于2026年，是一家专注于把'手心的温情与美好时光'带回千家万户的创意生活美学品牌。我们不追求宏大冰冷的科技概念，不谈空洞的数据指标。我们是一群热爱生活的年轻人，因为共同的热情聚在这个温润的品牌团队中。我们坚信，生活里的物件应该带有呼吸 and 厚度，能够在你感到疲惫的瞬间，给身心一个踏踏实实、充满善意与温存的拥抱。",
+    en: "Founded in 2026, TIMURA is an online brand dedicated to restoring touch and warmth to our cozy home and outdoor items. We steer clear of cold high-tech terms, complex sensors, or data metrics. We are simply a group of friends passionate about crafted living. We strongly believe that everyday items should hold organic tactile value, offering you a quiet, warm, and loving hug whenever you feel overwhelmed."
   },
   philosophy: {
     zh: "「拾光时光」名字的由来，是‘在平凡的日常中拾起美好时光，发现生活的无限乐趣’。我们主营温馨家居、惬意户外好物以及纯手作指尖解压玩具。正如我们不变的誓言：拥抱当下，把时光留给美好。愿您在这里找到热爱，放松心情，享受生活里的每个温存当下。",

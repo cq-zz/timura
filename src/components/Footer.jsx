@@ -2,14 +2,14 @@ import React from 'react';
 import { Phone, Mail, MapPin, ExternalLink, ShieldCheck } from 'lucide-react';
 import { BRAND_CONFIG, CATEGORIES, SLOGANS } from '../data/mockData';
 import { translate } from '../utils/lang';
-import logoImg from '../assets/images/timura_logo_1783931424503.jpg';
+import logoImg from '../assets/images/logo.png';
 import { zh } from '../locales/zh';
 import { hant } from '../locales/zh-hant';
 import { en } from '../locales/en';
 
 export default function Footer({ setActivePage, lang }) {
   const currentYear = new Date().getFullYear();
-
+  
   const tLoc = (key) => {
     const locales = {
       'zh': zh,
@@ -38,16 +38,15 @@ export default function Footer({ setActivePage, lang }) {
           {/* Col 1 - 4 columns - Brand Slogan */}
           <div className="md:col-span-4 space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="relative w-11 h-11 rounded-xl overflow-hidden shadow-sm flex items-center justify-center border border-[#7D6EAD]/20 bg-white">
+              <div className="relative h-11 flex items-center justify-center">
                 <img src={logoImg} alt="TIMURA Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
-              <div>
-                <span className="text-lg font-bold text-[#5B4B8A] block">{translate(BRAND_CONFIG.name, lang)}</span>
-                <span className="text-[9px] uppercase tracking-wider text-[#7D6EAD] font-mono block -mt-1">{BRAND_CONFIG.englishName}</span>
-              </div>
             </div>
+            <p className="text-[11px] text-[#7D6EAD] font-semibold tracking-wide italic">
+              {translate(BRAND_CONFIG.slogan, lang)}
+            </p>
             <p className="text-xs text-gray-500 leading-relaxed font-normal">
-              {translate(SLOGANS, lang).description}
+              {(SLOGANS[lang] || SLOGANS.zh).description}
             </p>
             <div className="pt-2 flex gap-3">
               <a

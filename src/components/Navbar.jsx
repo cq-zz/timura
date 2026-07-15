@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Sparkles, PhoneCall, Globe, ChevronDown } from 'lucide-react';
 import { BRAND_CONFIG } from '../data/mockData';
 import { translate } from '../utils/lang';
-import logoImg from '../assets/images/timura_logo_1783931424503.jpg';
+import logoImg from '../assets/images/logo.png';
 import { motion, AnimatePresence } from 'motion/react';
 import { zh } from '../locales/zh';
 import { hant } from '../locales/zh-hant';
@@ -63,26 +63,21 @@ export default function Navbar({ activePage, setActivePage, lang, setLang }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-12 sm:h-14">
-          {/* Logo */}
+          {/* Logo + Slogan */}
           <div
             id="logo-container"
             onClick={() => {
               setActivePage('home');
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="flex items-center cursor-pointer group flex-shrink-0 mr-2"
+            className="flex items-center cursor-pointer group mr-2 gap-3"
           >
-            <div className="relative w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center border border-[#7D6EAD]/20 bg-white shrink-0">
+            <div className="relative h-10 sm:h-12 rounded-lg group-hover:scale-105 transition-transform flex items-center justify-center">
               <img src={logoImg} alt="TIMURA Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             </div>
-            <div className="ml-2 sm:ml-3 shrink-0">
-              <span className="text-sm sm:text-base md:text-lg font-bold tracking-tight text-[#5B4B8A] block leading-tight">
-                {translate(BRAND_CONFIG.name, lang)}
-              </span>
-              <span className="hidden sm:block text-[9px] uppercase tracking-widest text-[#7D6EAD] block -mt-0.5 font-mono">
-                {BRAND_CONFIG.englishName}
-              </span>
-            </div>
+            <span className="hidden lg:block text-[11px] text-gray-400 font-medium tracking-wide italic border-l border-gray-200 pl-3">
+              {translate(BRAND_CONFIG.slogan, lang)}
+            </span>
           </div>
 
           {/* Desktop Navigation */}

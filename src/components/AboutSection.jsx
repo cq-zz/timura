@@ -259,7 +259,7 @@ export default function AboutSection({ lang }) {
               }, lang)}
             </p>
             <div className="pt-4 border-t border-gray-200/50 flex items-center justify-between">
-              <span className="text-xs text-gray-400 font-mono">EST. 2021 — TIMURA</span>
+              <span className="text-xs text-gray-400 font-mono">EST. 2026 — TIMURA</span>
               <span className="text-[#7D6EAD] text-sm font-semibold">✿ {translate({ zh: "拾光时光", en: "TIMURA" }, lang)}</span>
             </div>
           </div>
