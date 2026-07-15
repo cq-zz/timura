@@ -88,7 +88,7 @@ export const zh = {
     qualDesc1: "回归质朴与天然手感",
     qualBadge2: "纯朴守护",
     qualDesc2: "温暖、惬意与彻底解压",
-    imgTag: "拾光时光生活馆",
+    imgTag: "拾光有趣生活馆",
     imgTitle: "让家的每一个角落都有温度",
     certHeading: "品牌的合规资质",
     certSub: "我们始终秉持合法、合规、诚信的经营态度，让大家买得安心、用得放心。",

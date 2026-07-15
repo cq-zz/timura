@@ -254,13 +254,13 @@ export default function AboutSection({ lang }) {
             </h4>
             <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
               {translate({
-                zh: "我们深信：生活里的每一个小物件都不应该是冰冷没有生命的。拾光时光起步于一个极小的阁楼，我们会在每一个寄出的包裹中，悄悄塞进两小包我们自己晾晒的薰衣草干花包。希望当大家打开纸盒的瞬间，能闻到山野的味道，感受到我们真诚的手心温存。珍惜时间、热爱生活、享受放松。",
+                zh: "我们深信：生活里的每一个小物件都不应该是冰冷没有生命的。拾光有趣起步于一个极小的阁楼，我们会在每一个寄出的包裹中，悄悄塞进两小包我们自己晾晒的薰衣草干花包。希望当大家打开纸盒的瞬间，能闻到山野的味道，感受到我们真诚的手心温存。珍惜时间、热爱生活、享受放松。",
                 en: "We believe that items are not just cold tools, they should warm your hands and soul. TIMURA starts from a very tiny room, and we put special local lavender herbs inside your parcel. May you cherish your time, breathe slowly, and love life."
               }, lang)}
             </p>
             <div className="pt-4 border-t border-gray-200/50 flex items-center justify-between">
               <span className="text-xs text-gray-400 font-mono">EST. 2026 — TIMURA</span>
-              <span className="text-[#7D6EAD] text-sm font-semibold">✿ {translate({ zh: "拾光时光", en: "TIMURA" }, lang)}</span>
+              <span className="text-[#7D6EAD] text-sm font-semibold">✿ {translate({ zh: "拾光有趣", en: "TIMURA" }, lang)}</span>
             </div>
           </div>
         </div>

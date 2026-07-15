@@ -1,5 +1,5 @@
 /**
- * 拾光时光 - 模拟数据库
+ * 拾光有趣 - 模拟数据库
  * 主打：温暖手感、惬意生活、治愈礼物
  * 薰衣草紫 (#7D6EAD) + 暖白 (#FCFBF9)
  */
@@ -8,8 +8,8 @@ import { s2t } from '../utils/lang';
 
 export const BRAND_CONFIG = {
   name: {
-    zh: "拾光时光",
-    "zh-hant": "拾光时光",
+    zh: "拾光有趣",
+    "zh-hant": "拾光有趣",
     en: "TIMURA"
   },
   englishName: "TIMURA",
@@ -29,8 +29,8 @@ export const BRAND_CONFIG = {
     phone: "400-888-9999",
     email: "hello@timura.com",
     address: {
-      zh: "江苏省苏州市姑苏区暖风路 12 号拾光时光生活馆",
-      "zh-hant": "江蘇省蘇州市姑蘇區暖風路 12 號拾光时光生活館",
+      zh: "江苏省苏州市姑苏区暖风路 12 号拾光有趣生活馆",
+      "zh-hant": "江蘇省蘇州市姑蘇區暖風路 12 號拾光有趣生活館",
       en: "No. 12 Nuanfeng Road, Gusu District, Suzhou, Jiangsu Province, China"
     },
     workingHours: {
@@ -44,14 +44,14 @@ export const BRAND_CONFIG = {
   },
   seo: {
     zh: {
-      metaTitle: "拾光时光 | 传递温暖与质感的创意生活好物品牌",
-      metaKeywords: "拾光时光, 温馨家居, 惬意户外, 治愈系好物, 减压玩具, 手工质感, 温暖礼物, 创意好物",
-      metaDescription: "拾光时光是一家传递温暖与爱意的互联网生活品牌，主营富有温度的温馨家居、便携户外装备、治愈解压小玩具及创意好物，愿以真诚的物件给您的日常生活一个大大的拥抱。"
+      metaTitle: "拾光有趣 | 传递温暖与质感的创意生活好物品牌",
+      metaKeywords: "拾光有趣, 温馨家居, 惬意户外, 治愈系好物, 减压玩具, 手工质感, 温暖礼物, 创意好物",
+      metaDescription: "拾光有趣是一家传递温暖与爱意的互联网生活品牌，主营富有温度的温馨家居、便携户外装备、治愈解压小玩具及创意好物，愿以真诚的物件给您的日常生活一个大大的拥抱。"
     },
     "zh-hant": {
-      metaTitle: "拾光时光 | 傳遞溫慢與質感的創意生活好物品牌",
-      metaKeywords: "拾光时光, 溫馨家居, 愜意戶外, 治癒系好物, 減壓玩具, 手工質感, 溫暖禮物, 創意好物",
-      metaDescription: "拾光时光是一家傳遞溫暖與愛意的互聯網生活品牌，主營富有溫度的溫馨家居、便攜戶外裝備、治癒解壓小玩具及創意好物，願以真誠的物件給您的日常生活一個大大的擁抱。"
+      metaTitle: "拾光有趣 | 傳遞溫慢與質感的創意生活好物品牌",
+      metaKeywords: "拾光有趣, 溫馨家居, 愜意戶外, 治癒系好物, 減壓玩具, 手工質感, 溫暖禮物, 創意好物",
+      metaDescription: "拾光有趣是一家傳遞溫暖與愛意的互聯網生活品牌，主營富有溫度的溫馨家居、便攜戶外裝備、治癒解壓小玩具及創意好物，願以真誠的物件給您的日常生活一個大大的擁抱。"
     },
     en: {
       metaTitle: "TIMURA | Cozy Home, Outdoors, Healing Gifts & Creative Goods",
@@ -66,12 +66,12 @@ export const SLOGANS = {
   zh: {
     title: "拥抱当下，把时光留给美好",
     subtitle: "珍惜时光 • 热爱生活 • 放松心情 • 享受生活",
-    description: "我们相信，好物件能够传递手心的温度。拾光时光精心挑选温馨家居、便携户外、治愈解压好物与独特创意好物，愿陪伴您慢下脚步，静静呼吸，温暖每一个平凡的日常。",
+    description: "我们相信，好物件能够传递手心的温度。拾光有趣精心挑选温馨家居、便携户外、治愈解压好物与独特创意好物，愿陪伴您慢下脚步，静静呼吸，温暖每一个平凡的日常。",
   },
   "zh-hant": {
     title: "擁抱當下，把時光留給美好",
     subtitle: "珍惜時光 • 熱愛生活 • 放鬆心情 • 享受生活",
-    description: "我們相信，好物件能夠傳遞手心的溫度。拾光时光精心挑選溫馨家居、便攜戶外、治癒解壓好物與獨特創意好物，願陪伴您慢下腳步，靜靜呼吸，溫暖每一個平凡的日常。",
+    description: "我們相信，好物件能夠傳遞手心的溫度。拾光有趣精心挑選溫馨家居、便攜戶外、治癒解壓好物與獨特創意好物，願陪伴您慢下腳步，靜靜呼吸，溫暖每一個平凡的日常。",
   },
   en: {
     title: "Embrace the Moment, Cherish the Time",
@@ -481,7 +481,7 @@ export const PRODUCTS = [
         "承重上限": "最大可承受 15kg 物品重量",
         "材质": "特级野生粗亚麻线、有机纯棉编带、食品级TPU防水里布",
         "清洗建议": "建议使用温水手洗，平铺自然阴干，越洗越有质朴的柔软触感",
-        "包装清单": "TravelWeave 编织袋×1、拾光时光木刻徽章×1"
+        "包装清单": "TravelWeave 编织袋×1、拾光有趣木刻徽章×1"
       },
       en: {
         "Dimensions": "Width 380mm x Height 420mm (Strap Drop 260mm)",
@@ -817,7 +817,7 @@ export const PRODUCTS = [
       }
     },
     description: {
-      zh: "CatTail 治愈系抱枕是拾光时光团队为紧绷都市白领打造的温情良伴。它不仅是一个托举酸疼腰颈的记忆枕，更像一只温顺懂事的猫咪静静蜷缩在您身侧。490克沉甸甸的抱感，超柔的白兔毛触感在指尖划过，如同正在温柔地抚摸一只满足的小猫，用最温和柔糯的物理质地抚慰您所有的焦躁。",
+      zh: "CatTail 治愈系抱枕是拾光有趣团队为紧绷都市白领打造的温情良伴。它不仅是一个托举酸疼腰颈的记忆枕，更像一只温顺懂事的猫咪静静蜷缩在您身侧。490克沉甸甸的抱感，超柔的白兔毛触感在指尖划过，如同正在温柔地抚摸一只满足的小猫，用最温和柔糯的物理质地抚慰您所有的焦躁。",
       en: "CatTail Memory Pillow provides a quiet, pet-like companionship to heal your tired spirit. Crafted with medical-grade memory foam inside, it curves beautifully around your body to provide customized lumbar or neck alignment. Covered in static-free, ultra-soft bionic rabbit fleece, stroking it feels incredibly lifelike and comforting—relieving stress through warm sensory connection."
     },
     redirectUrls: {
@@ -960,11 +960,11 @@ export const PRODUCTS = [
 
 export const ABOUT_INFO = {
   intro: {
-    zh: "「拾光时光」成立于2026年，是一家专注于把'手心的温情与美好时光'带回千家万户的创意生活美学品牌。我们不追求宏大冰冷的科技概念，不谈空洞的数据指标。我们是一群热爱生活的年轻人，因为共同的热情聚在这个温润的品牌团队中。我们坚信，生活里的物件应该带有呼吸 and 厚度，能够在你感到疲惫的瞬间，给身心一个踏踏实实、充满善意与温存的拥抱。",
+    zh: "「拾光有趣」成立于2026年，是一家专注于把'手心的温情与美好时光'带回千家万户的创意生活美学品牌。我们不追求宏大冰冷的科技概念，不谈空洞的数据指标。我们是一群热爱生活的年轻人，因为共同的热情聚在这个温润的品牌团队中。我们坚信，生活里的物件应该带有呼吸 and 厚度，能够在你感到疲惫的瞬间，给身心一个踏踏实实、充满善意与温存的拥抱。",
     en: "Founded in 2026, TIMURA is an online brand dedicated to restoring touch and warmth to our cozy home and outdoor items. We steer clear of cold high-tech terms, complex sensors, or data metrics. We are simply a group of friends passionate about crafted living. We strongly believe that everyday items should hold organic tactile value, offering you a quiet, warm, and loving hug whenever you feel overwhelmed."
   },
   philosophy: {
-    zh: "「拾光时光」名字的由来，是‘在平凡的日常中拾起美好时光，发现生活的无限乐趣’。我们主营温馨家居、惬意户外好物以及纯手作指尖解压玩具。正如我们不变的誓言：拥抱当下，把时光留给美好。愿您在这里找到热爱，放松心情，享受生活里的每个温存当下。",
+    zh: "「拾光有趣」名字的由来，是‘在平凡的日常中拾起美好时光，发现生活的无限乐趣’。我们主营温馨家居、惬意户外好物以及纯手作指尖解压玩具。正如我们不变的誓言：拥抱当下，把时光留给美好。愿您在这里找到热爱，放松心情，享受生活里的每个温存当下。",
     en: "The name 'TIMURA' holds a beautiful wish: to gather the warm moments of time and discover the true joy of life. We carry warm bedroom supplies, travel carriers, and handcrafted stress-relief toys. Enjoy the present, value your time, and cherish every single beautiful moment of peace."
   },
   certificates: {

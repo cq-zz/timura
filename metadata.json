@@ -1,6 +1,6 @@
 {
-  "name": "拾光时光 (TIMURA)",
-  "description": "拾光时光 (TIMURA) 官方品牌展示网站。主营温馨家居、惬意户外及治愈解压玩具，融合温润设计与实用美学。支持中英文双语切换、Banner轮播及顺滑交互动画。",
+  "name": "拾光有趣 (TIMURA)",
+  "description": "拾光有趣 (TIMURA) 官方品牌展示网站。主营温馨家居、惬意户外及治愈解压玩具，融合温润设计与实用美学。支持中英文双语切换、Banner轮播及顺滑交互动画。",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
